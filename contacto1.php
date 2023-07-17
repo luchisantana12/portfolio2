@@ -1,5 +1,37 @@
 <?php
     $pg = "contacto"; 
+
+if($_POST){
+    $nombre = $_POST["txtNombre"];
+    $correo = $_POST["txtCorre"];
+    $telefono = $_POST["txtTelefono"];
+    $mensaje = $_POST["txtMensaje"];
+
+    $para = "luchisantana555@gmail.com";
+    $titulo = "recibiste un mensaje desde tu web";
+
+    $cuerpo = "
+    Nombre: $nombre <br>
+    Correo: $correo <br>
+    Telefono: $telefono <br>
+    Mensaje: $mensaje <br>
+    ";
+
+    // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+// Cabeceras adicionales
+$cabeceras .= 'To: luchisantana555@gmail.com' . "\r\n";
+
+
+
+// Enviarlo
+//mail($para, $título, $mensaje, $cabeceras);
+header("location: contacto2.php");
+}
+
+
 ?>
 
 <!DOCTYPE html>

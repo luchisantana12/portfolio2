@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-12 col-sm-9">
                 <p>apasionado por el trabajo, el desarrollo y la inovacion. Desarrolador full stack</p>
-                <a href="contacto.php" class="btn btn-rojo my-5 d-none d-sm-block w-25">Enviar mensaje</a>
+                <a href="contacto1.php" class="btn btn-rojo my-5 d-none d-sm-block w-25">Enviar mensaje</a>
             </div>
             <div class="col-12 col-sm-3">
                 <img src="images/6016EE19-1339-4927-82EB-F3B5BAFCD25A_edited.jpg" alt="luciano santana" class="foto-perfil img-fluid d-none d-sm-block">
